@@ -193,13 +193,13 @@ const Dashboard: React.FC = () => {
     return <div className="text-center py-10">Loading dashboard...</div>;
   }
 
-  // if (!stats.totalCases) {
-  //   return (
-  //     <div className="text-center py-10 text-gray-500">
-  //       ⚠️ No case data available yet. Check console logs.
-  //     </div>
-  //   );
-  // }
+  if (!stats.totalCases) {
+    return (
+      <div className="text-center py-10 text-gray-500">
+        ⚠️ No case data available yet. Check console logs.
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
